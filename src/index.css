@@ -1,0 +1,98 @@
+*{
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.App{
+  width: 50%;
+  height: 100vh;
+  margin: auto auto;
+  line-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width: 80vh;
+  height: 40vh;
+  line-height: 40vh;
+  margin: auto auto;
+  background: rgb(1, 83, 206);
+  border-radius: 25px;
+  color: bisque;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);     /* just like: 1fr 1fr 1fr       الاعمدة*/  
+  grid-template-rows: repeat(5,minmax(50px,auto));     /*الصفوف    minmax let any element with content more than 200px to go beyond */
+  grid-gap: 6px;                           /* wecan make the gap separetely for columns and rowes*/
+}
+.quiz,.ans1,.ans2,.ans3,.ans4{
+  grid-column-start: 1;
+  grid-column-end:4;
+  display: flex;
+  align-items: center;
+  text-align: center;         
+  justify-content: center;
+}
+
+button{
+  background: transparent;
+  border: 0;
+  color: white;
+cursor: pointer;
+z-index: 1;
+}
+button:hover{
+  text-shadow: 4px 3px 4px black;
+}
+button:focus{
+  outline: none;
+}
+h1{
+  position: absolute;
+    opacity: 0.2;
+    font-size: 4rem;
+    cursor: default;
+
+}
+.got{
+  font-size: 2rem;
+}
+
+@media(max-height:800px ){
+  .box{
+  grid-template-rows: repeat(5,minmax(30px,auto));
+  }
+   @media (min-width:400px) and (max-width:600px) {
+    
+      .quiz{
+        font-size: larger;
+      }
+   }
+
+}
+@media(max-width:600px ){
+  *{
+   font-size:1rem ; 
+  }
+  button:hover{
+    text-shadow: none;
+  }
+  .App{
+    width: 65%;
+  }
+  .box{
+    height: 40vh;
+    line-height: 40vh;
+    grid-template-rows: repeat(5,minmax(30px,auto));  
+  }
+  .square{
+    transform: translate(0%, 90px) rotate(360deg) ;
+       position: absolute;
+  }
+  
+ 
+}
+
+
+
