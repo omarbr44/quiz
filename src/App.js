@@ -28,7 +28,7 @@ function App() {
       Correct:"Canberra",
       unCorrect1 :"Sydney",
       unCorrect2 :"Perth",
-      unCorrect3 :"Ottawa"
+      unCorrect3 :"Ottawaa"
     },
     {
       Q:"what is the capital of Jordan?",
