@@ -10,7 +10,7 @@ function App() {
  }
   const qizArr=[
     {
-      Q:"what is the capital of USA?",
+      Q:"what Is the capital of USA?",
       unCorrect1 :"Los Angeles",
       Correct:"New York",
       unCorrect2 :"California",
