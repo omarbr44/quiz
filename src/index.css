@@ -62,15 +62,15 @@ h1{
 @media(max-height:800px ){
   .box{
   grid-template-rows: repeat(5,minmax(30px,auto));
-  }
-   @media (min-width:400px) and (max-width:600px) {
+  }}
+   @media (min-width:430px) and (max-width:600px) {
     
       .quiz{
         font-size: larger;
       }
    }
 
-}
+
 @media(max-width:600px ){
   *{
    font-size:1rem ; 
@@ -90,7 +90,9 @@ h1{
     transform: translate(0%, 90px) rotate(360deg) ;
        position: absolute;
   }
-  
+  .quiz{
+    font-weight: 800;
+  }
  
 }
 
